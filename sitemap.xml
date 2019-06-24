@@ -3,24 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://goutamsh.github.io/about/about-me/</loc>
-    <lastmod>2019-06-23T23:47:03+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goutamsh.github.io/about/</loc>
-    <lastmod>2019-06-23T23:47:03+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goutamsh.github.io/</loc>
-    <lastmod>2019-06-23T23:47:03+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goutamsh.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goutamsh.github.io/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://goutamsh.github.io/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goutamsh.github.io/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://goutamsh.github.io/series/</loc>
     <priority>0</priority>
   </url>
   

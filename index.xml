@@ -5,20 +5,40 @@
     <link>https://goutamsh.github.io/</link>
     <description>Recent content on Goutam Shepur</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 23 Jun 2019 23:47:03 +0100</lastBuildDate>
+    <language>en</language>
     
 	<atom:link href="https://goutamsh.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Me</title>
-      <link>https://goutamsh.github.io/about/about-me/</link>
-      <pubDate>Sun, 23 Jun 2019 23:47:03 +0100</pubDate>
+      <link>https://goutamsh.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://goutamsh.github.io/about/about-me/</guid>
-      <description>Hi,
-I am Java developer. Interested in Design and Problem solving. Love learning just anything I find interesting.</description>
+      <guid>https://goutamsh.github.io/about/</guid>
+      <description>Hello,
+I&amp;rsquo;m Goutam. I am a software Developer. Love to learn new technologies and approaches to software development. In my free time I play Harmonica and go for long walks.
+Cheers !</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://goutamsh.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://goutamsh.github.io/contact/</guid>
+      <description>Email : goutam.s.h@gmail.com
+Mobile: +44 742 452 9473
+[CV]()</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://goutamsh.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://goutamsh.github.io/projects/</guid>
+      <description>Nothing to see here&amp;hellip; Move along!</description>
     </item>
     
   </channel>
