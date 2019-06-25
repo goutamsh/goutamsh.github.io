@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Goutam Shepur</title>
+    <link>https://goutamsh.github.io/posts/</link>
+    <description>Recent content in Posts on Goutam Shepur</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Jun 2019 00:07:45 +0100</lastBuildDate>
+    
+	<atom:link href="https://goutamsh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software Design Trade-offs</title>
+      <link>https://goutamsh.github.io/posts/26-06-2019/</link>
+      <pubDate>Wed, 26 Jun 2019 00:07:45 +0100</pubDate>
+      
+      <guid>https://goutamsh.github.io/posts/26-06-2019/</guid>
+      <description>What are some of the design trade-offs to keep in mind with regards to software ?
+ Share resource VS Race condition
+If we share resource then we need to consider about race condition scenarion. This is basically in case of multi-threaded environment.
+ Centralization VS Single Point of Failure
+If we think of centralizing some core functionality in one service (for re-usability) or routing traffic through one service (as a proxy or gateway) or basically service which is involved in all data flows, then we need to consider about Single Point of Failure and design for resiliency.</description>
+    </item>
+    
+  </channel>
+</rss>
