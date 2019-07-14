@@ -12,15 +12,15 @@
     
     
     <item>
-      <title>Software Design Trade-offs</title>
+      <title>Software Design Considerations</title>
       <link>https://goutamsh.github.io/posts/26-06-2019/</link>
       <pubDate>Wed, 26 Jun 2019 00:07:45 +0100</pubDate>
       
       <guid>https://goutamsh.github.io/posts/26-06-2019/</guid>
-      <description>What are some of the design trade-offs to keep in mind with regards to software ?
- Share resource VS Race condition
+      <description>What are some of the design considerations to keep in mind with regards to software when we have to choose one aspect?
+ Share resource and Race condition
 If we share resource then we need to consider about race condition scenarion. This is basically in case of multi-threaded environment.
- Centralization VS Single Point of Failure
+ Centralization and Single Point of Failure
 If we think of centralizing some core functionality in one service (for re-usability) or routing traffic through one service (as a proxy or gateway) or basically service which is involved in all data flows, then we need to consider about Single Point of Failure and design for resiliency.</description>
     </item>
     
