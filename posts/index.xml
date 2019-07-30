@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Goutam Shepur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Jun 2019 00:07:45 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 23:40:45 +0100</lastBuildDate>
     
 	<atom:link href="https://goutamsh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What is CAP Theorem?</title>
+      <link>https://goutamsh.github.io/posts/30-07-2019/</link>
+      <pubDate>Tue, 30 Jul 2019 23:40:45 +0100</pubDate>
+      
+      <guid>https://goutamsh.github.io/posts/30-07-2019/</guid>
+      <description>CAP = Consistency, Availability and Partition Tolerent
+ CAP theorem is generally applicable to distributed systems. In order to cater to heavy workloads we think of scaling out our application by adding additional commodity hardware to system.
+ The CAP Theorem states that, in a distributed system (a collection of interconnected nodes that share data.), you can only have two out of the following three guarantees across a write/read pair: Consistency, Availability, and Partition Tolerance - one of them must be sacrificed.</description>
+    </item>
     
     <item>
       <title>Software Design Considerations</title>
