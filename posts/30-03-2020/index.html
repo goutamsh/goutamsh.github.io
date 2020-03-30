@@ -10,34 +10,28 @@
     
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Software Design Considerations"/>
-<meta name="twitter:description" content="What are some of the design considerations to keep in mind with regards to software when we have to choose one aspect?
- Share resource and Race condition
-If we share resource then we need to consider about race condition scenarion. This is basically in case of multi-threaded environment.
- Centralization and Single Point of Failure
-If we think of centralizing some core functionality in one service (for re-usability) or routing traffic through one service (as a proxy or gateway) or basically service which is involved in all data flows, then we need to consider about Single Point of Failure and design for resiliency."/>
+<meta name="twitter:title" content="Monitoring and Observability"/>
+<meta name="twitter:description" content="When I first came across term Observability I was bit confused how different it is from Monitoring. We used to monitor our application and servers using Splunk and some in-house developed softwares. Let&rsquo;s see how Observability and Monitoring are different.
+Monitoring: Monitoring is a verb; something we perform against our applications and systems to determine their state. From basic fitness tests and whether they’re up or down, to more proactive performance health checks."/>
 
-    <meta property="og:title" content="Software Design Considerations" />
-<meta property="og:description" content="What are some of the design considerations to keep in mind with regards to software when we have to choose one aspect?
- Share resource and Race condition
-If we share resource then we need to consider about race condition scenarion. This is basically in case of multi-threaded environment.
- Centralization and Single Point of Failure
-If we think of centralizing some core functionality in one service (for re-usability) or routing traffic through one service (as a proxy or gateway) or basically service which is involved in all data flows, then we need to consider about Single Point of Failure and design for resiliency." />
+    <meta property="og:title" content="Monitoring and Observability" />
+<meta property="og:description" content="When I first came across term Observability I was bit confused how different it is from Monitoring. We used to monitor our application and servers using Splunk and some in-house developed softwares. Let&rsquo;s see how Observability and Monitoring are different.
+Monitoring: Monitoring is a verb; something we perform against our applications and systems to determine their state. From basic fitness tests and whether they’re up or down, to more proactive performance health checks." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://goutamsh.github.io/posts/26-06-2019/" />
-<meta property="article:published_time" content="2019-06-26T00:07:45&#43;01:00"/>
-<meta property="article:modified_time" content="2019-06-26T00:07:45&#43;01:00"/>
+<meta property="og:url" content="https://goutamsh.github.io/posts/30-03-2020/" />
+<meta property="article:published_time" content="2020-03-30T00:00:00&#43;01:00"/>
+<meta property="article:modified_time" content="2020-03-30T00:00:00&#43;01:00"/>
 
 
     
-      <base href="https://goutamsh.github.io/posts/26-06-2019/">
+      <base href="https://goutamsh.github.io/posts/30-03-2020/">
     
     <title>
-  Software Design Considerations · Goutam Shepur
+  Monitoring and Observability · Goutam Shepur
 </title>
 
     
-      <link rel="canonical" href="https://goutamsh.github.io/posts/26-06-2019/">
+      <link rel="canonical" href="https://goutamsh.github.io/posts/30-03-2020/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -105,14 +99,14 @@ If we think of centralizing some core functionality in one service (for re-usabi
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Software Design Considerations</h1>
+          <h1 class="title">Monitoring and Observability</h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2019-06-26T00:07:45&#43;01:00'>
-                June 26, 2019
+              <time datetime='2020-03-30T00:00:00&#43;01:00'>
+                March 30, 2020
               </time>
             </span>
             <span class="reading-time">
@@ -126,30 +120,41 @@ If we think of centralizing some core functionality in one service (for re-usabi
       </header>
 
       <div>
-        <p>What are some of the design considerations to keep in mind with regards to software when we have to choose one aspect?</p>
+        
 
-<ul>
-<li><p>Share resource and Race condition</p>
+<p>When I first came across term Observability I was bit confused how different it is from Monitoring.
+We used to monitor our application and servers using Splunk and some in-house developed softwares.
+Let&rsquo;s see how Observability and Monitoring are different.</p>
 
-<p>If we share resource then we need to consider about race condition scenarion. This is basically in case of multi-threaded environment.</p></li>
+<p><strong>Monitoring</strong>:
+Monitoring is a verb; something we perform against our applications and systems to determine their state. From basic fitness tests and whether they’re up or down, to more proactive performance health checks. We monitor applications to detect problems and anomalies. As troubleshooters, we use it to find the root cause of problems and gain insights into capacity requirements and performance trends over time.</p>
 
-<li><p>Centralization and Single Point of Failure</p>
+<p><strong>Observability</strong>:
+It’s a measure of how well internal states of a system can be inferred from knowledge of its external outputs. So in contrast to monitoring which is something we actually do, observability (as a noun), is more a property of a system. Therefore, if our good old IT systems and applications don’t adequately externalize their state, then even the best monitoring can fall short.</p>
 
-<p>If we think of centralizing some core functionality in one service (for re-usability) or routing traffic through one service (as a proxy or gateway) or basically service which is involved in all data flows, then we need to consider about Single Point of Failure and design for resiliency.</p></li>
+<p>Observability is instrumenting systems and applications to collect metrics and logs. It’s building apps with the idea that someone is going to
+watch them. It comes from system control theory, the foundation of feedback systems, where observability is a measure of how well the internal states of a system
+can be inferred from knowledge of its external outputs — a kind of digital exhaust. Think of it as a property of a system — another attribute, like functionality,
+performance or testability.</p>
 
-<li><p>Cache/Performance and Stale data/Storage</p>
+<p>&ldquo;You can monitor a
+system using various
+instrumentation. But if the
+system doesn’t externalize
+its state well enough that
+you can figure out what’s
+actually going on in there,
+then you’re stuck.&rdquo;</p>
 
-<p>For performance reasons, we may wanto to use caching solutions for faster retrieval of data but then we have to consider about data stale issues.</p></li>
+<p><img src="https://raw.githubusercontent.com/goutamsh/blog/master/content/posts/img_30-03-2020/monitoring_vs_observability.png" alt="" /></p>
 
-<li><p>Denormalization/Performance and Consistency</p>
+<h3 id="references">References:</h3>
 
-<p>Sometimes for performance improvement we think of Denormalization (duplicating data in multiple tables to avoid joining large tables). In this case
-we need to consider about data consistency (if there is any update needs to be done then it should be done carefully in all places wherever data is been replicated)</p></li>
-</ul>
+<ol>
+<li><p><a href="https://thenewstack.io/monitoring-and-observability-whats-the-difference-and-why-does-it-matter/">https://thenewstack.io/monitoring-and-observability-whats-the-difference-and-why-does-it-matter/</a></p></li>
 
-<p>Summary:</p>
-
-<p>There will always be some kind of compromises on the architecture. We need to keep these kind of design considerations/trade-offs in mind so that as per problem domain we can apply specific solutions.</p>
+<li><p><a href="https://www.splunk.com/pdfs/ebooks/beginners-guide-to-observability.pdf">https://www.splunk.com/pdfs/ebooks/beginners-guide-to-observability.pdf</a></p></li>
+</ol>
 
       </div>
 

@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Goutam Shepur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Jul 2019 23:40:45 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://goutamsh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Monitoring and Observability</title>
+      <link>https://goutamsh.github.io/posts/30-03-2020/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://goutamsh.github.io/posts/30-03-2020/</guid>
+      <description>When I first came across term Observability I was bit confused how different it is from Monitoring. We used to monitor our application and servers using Splunk and some in-house developed softwares. Let&amp;rsquo;s see how Observability and Monitoring are different.
+Monitoring: Monitoring is a verb; something we perform against our applications and systems to determine their state. From basic fitness tests and whether they’re up or down, to more proactive performance health checks.</description>
+    </item>
     
     <item>
       <title>What is CAP Theorem?</title>
