@@ -6,10 +6,23 @@
     <description>Recent content on Goutam Shepur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 17:01:57 +0100</lastBuildDate>
     
 	<atom:link href="https://goutamsh.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ELK Stack</title>
+      <link>https://goutamsh.github.io/posts/08-04-2010/</link>
+      <pubDate>Wed, 08 Apr 2020 17:01:57 +0100</pubDate>
+      
+      <guid>https://goutamsh.github.io/posts/08-04-2010/</guid>
+      <description>ELK Stack is a collection of three open-source products - Elasticsearch, Logstash and Kibana. They are all developed, managed ,and maintained by the company Elastic.
+E stands for ElasticSearch: used for storing logs
+L stands for LogStash : used for both shipping as well as processing and storing logs
+K stands for Kibana: is a visutalization tool (a web interface) which is hosted through Nginx or Apache
+Fundamentally if you know how splunk works, it is somewhat functionally similar.</description>
+    </item>
     
     <item>
       <title>Monitoring and Observability</title>
